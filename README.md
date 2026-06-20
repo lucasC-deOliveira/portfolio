@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">lucas.dev — Portfólio</h1>
 
-## Getting Started
+<p align="center">
+  Portfólio pessoal de <strong>Lucas Carvalho de Oliveira</strong> — Desenvolvedor de Sistemas & Full Stack.<br/>
+  Tema hacker/terminal em verde-neon, bilíngue (PT/EN) e com um boot intro estilo <em>"ACCESS GRANTED"</em>.
+</p>
 
-First, run the development server:
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-000?style=for-the-badge&logo=nextdotjs" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white" alt="React"/>
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+  <img src="https://img.shields.io/badge/Motion-12-2bff88?style=for-the-badge" alt="Motion"/>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Funcionalidades
+
+- **Boot intro "ACCESS GRANTED"** — sequência de terminal glitchada que toca uma vez por sessão (`UNAUTHORIZED → breaching → AUTHORIZED`).
+- **Bilíngue PT/EN** — toggle de idioma com persistência em `localStorage`.
+- **Tema hacker verde** — paleta verde-neon, grid "blueprint", grão de filme e chuva de código estilo Matrix no fundo.
+- **Efeitos de scramble** — decodificação de texto no nome, nos links do menu e nos títulos dos projetos.
+- **Animações on-scroll** com [Motion](https://motion.dev).
+- **Acessível** — respeita `prefers-reduced-motion` (desliga animações pesadas).
+- **SEO** — metadata e Open Graph configurados.
+
+## 🧱 Stack
+
+| Camada | Tecnologia |
+|--------|------------|
+| Framework | Next.js 16 (App Router) |
+| UI | React 19 · Tailwind CSS v4 |
+| Animação | Motion |
+| Linguagem | TypeScript |
+| Fontes | Clash Display · Satoshi · JetBrains Mono |
+| Deploy | Vercel |
+
+## 🗂️ Estrutura
+
+```
+src/
+├── app/
+│   ├── layout.tsx        # fontes, metadata, providers, boot
+│   ├── page.tsx          # composição das seções
+│   └── globals.css       # tema, tokens e efeitos (grid, grain, glitch)
+├── components/           # Hero, About, Skills, Experience, Projects, Contact…
+│   ├── BootSequence.tsx  # intro "ACCESS GRANTED"
+│   ├── MatrixRain.tsx    # chuva de código no fundo
+│   └── ScrambleText.tsx  # efeito de decodificação de texto
+└── lib/
+    ├── i18n.tsx          # conteúdo e contexto bilíngue
+    └── projects.ts       # lista de projetos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Rodando localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Outros scripts:
 
-## Learn More
+```bash
+npm run build    # build de produção
+npm run start    # serve o build
+npm run lint     # eslint
+```
 
-To learn more about Next.js, take a look at the following resources:
+> Dica: o boot intro só roda uma vez por sessão. Para revê-lo, abra uma aba anônima
+> ou rode `sessionStorage.removeItem('booted')` no console e recarregue.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📬 Contato
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **GitHub:** [@lucasC-deOliveira](https://github.com/lucasC-deOliveira)
+- **LinkedIn:** [lucas-c-oliveira](https://www.linkedin.com/in/lucas-c-oliveira/)
+- **E-mail:** lucascdoliveira.dev@gmail.com
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center"><sub>Feito com Next.js, Tailwind & cafeína. 💚</sub></p>
