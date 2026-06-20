@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://portfolio-beta-six-wmlhwe7jae.vercel.app/">
+  <a href="https://lucascdoliveira.vercel.app/">
     <img src="https://img.shields.io/badge/🔗_Live_Demo-2bff88?style=for-the-badge&logoColor=black&color=2bff88&labelColor=04140b" alt="Live Demo"/>
   </a>
 </p>
